@@ -310,15 +310,16 @@ PRODUCT_COPY_FILES += \
 
 # IMS
 PRODUCT_PACKAGES += \
+    ims-moto-libs
+
+PRODUCT_BOOT_JARS += \
     ims-moto-libs \
+    moto-ims-ext \
     moto-telephony
 
-# PRODUCT_BOOT_JARS += \
-#     ims-moto-libs \
-#     moto-telephony
-
-#PRODUCT_SYSTEM_SERVER_JARS += \
-#    moto-telephony
+PRODUCT_SYSTEM_SERVER_JARS += \
+    moto-ims-ext \
+    moto-telephony
 
 # IPACM
 PRODUCT_PACKAGES += \
