@@ -14,9 +14,16 @@
 # limitations under the License.
 #
 
+# Boot
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.0.vendor \
+    android.hardware.boot@1.1.vendor
+
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0.vendor
+    android.hardware.bluetooth@1.0.vendor \
+    android.hardware.bluetooth@1.1.vendor \
+    android.hardware.bluetooth.audio@2.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
